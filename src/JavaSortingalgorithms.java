@@ -53,18 +53,30 @@ public class JavaSortingalgorithms {
 		/*
 		 * This code below runs Insertion Sort
 		 */
-		System.out.println("Insertion Sort");
-		int arr[] = { 12, 11, 13, 5, 6 };
+		// System.out.println("Insertion Sort");
+		// int arr[] = { 12, 11, 13, 5, 6 };
+		//
+		// System.out.println("Given Array");
+		// printArray(arr);
+		//
+		// InsertionSort ob = new InsertionSort();
+		// ob.sort(arr);
+		//
+		// System.out.println("\nSorted array");
+		// printArray(arr);
 
-		System.out.println("Given Array");
-		printArray(arr);
-
-		InsertionSort ob = new InsertionSort();
-		ob.sort(arr);
+		/*
+		 * This code below runs QuickSort
+		 */
+		 System.out.println("Quick Sort");
+		 int arr[] = { 10, 7, 8, 9, 1, 5 };
+		 int n = arr.length;
 		
-		System.out.println("\nSorted array");
-		printArray(arr);
-
+		 QuickSort ob = new QuickSort();
+		 ob.sort(arr, 0, n - 1);
+		
+		 System.out.println("sorted array");
+		 printArray(arr);
 	}
 
 	/*
