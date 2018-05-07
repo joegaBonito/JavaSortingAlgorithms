@@ -1,9 +1,11 @@
+import java.util.LinkedList;
+
 public class JavaSortingalgorithms {
 
 	public static void main(String[] args) {
 
 		/*
-		 * This code below runs Selection Sort
+		 * Selection Sort
 		 */
 		// System.out.println("Selection Sort");
 		// SelectionSort ob = new SelectionSort();
@@ -13,7 +15,7 @@ public class JavaSortingalgorithms {
 		// ob.printArray(arr);
 
 		/*
-		 * This code below runs Bubble Sort
+		 * Bubble Sort
 		 */
 		// System.out.println("Bubble Sort");
 		// BubbleSort ob = new BubbleSort();
@@ -26,7 +28,7 @@ public class JavaSortingalgorithms {
 		// ob.printArray(arr,arr.length);
 
 		/*
-		 * This code below runs Recursive Bubble Sort
+		 * Recursive Bubble Sort
 		 */
 		// System.out.println("Recursive Bubble Sort");
 		// RecursiveBubbleSort ob = new RecursiveBubbleSort();
@@ -36,7 +38,7 @@ public class JavaSortingalgorithms {
 		// ob.printArray(arr);
 
 		/*
-		 * This code below runs Merge Sort
+		 * Merge Sort
 		 */
 		// System.out.println("Merge Sort");
 		// int arr[] = {12, 11, 13, 5, 6, 7};
@@ -51,7 +53,7 @@ public class JavaSortingalgorithms {
 		// printArray(arr);
 
 		/*
-		 * This code below runs Insertion Sort
+		 * Insertion Sort
 		 */
 		// System.out.println("Insertion Sort");
 		// int arr[] = { 12, 11, 13, 5, 6 };
@@ -66,17 +68,31 @@ public class JavaSortingalgorithms {
 		// printArray(arr);
 
 		/*
-		 * This code below runs QuickSort
+		 * QuickSort
 		 */
-		 System.out.println("Quick Sort");
-		 int arr[] = { 10, 7, 8, 9, 1, 5 };
-		 int n = arr.length;
+//		 System.out.println("Quick Sort");
+//		 int arr[] = { 10, 7, 8, 9, 1, 5 };
+//		 int n = arr.length;
+//		
+//		 QuickSort ob = new QuickSort();
+//		 ob.sort(arr, 0, n - 1);
+//		
+//		 System.out.println("sorted array");
+//		 printArray(arr);
 		
-		 QuickSort ob = new QuickSort();
-		 ob.sort(arr, 0, n - 1);
+		/*
+		 * HeapSort
+		 */
+		System.out.println("Heap Sort");
+		int arr[] = {12, 11, 13, 5, 6, 7};
+        int n = arr.length;
+ 
+        HeapSort ob = new HeapSort();
+        ob.sort(arr);
+ 
+        System.out.println("Sorted array is");
+        printArray(arr);
 		
-		 System.out.println("sorted array");
-		 printArray(arr);
 	}
 
 	/*
